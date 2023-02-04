@@ -11,31 +11,31 @@ UserFollow.create(user: user[0], follow: user[1])
 UserFollow.create(user: user[0], follow: user[2])
 
 bed_time_second = [
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-01 20:00:00'},
-  {user_id: 1, is_bedtime: false, created_at: '2023-02-02 08:00:00'},
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-02 21:00:00'},
-  {user_id: 1, is_bedtime: false, created_at: '2023-02-03 07:00:00'},
-  {user_id: 1, is_bedtime: false, created_at: '2023-02-03 08:00:00'},
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-03 20:00:00'},
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-03 23:00:00'},
-  {user_id: 1, is_bedtime: false, created_at: '2023-02-04 10:00:00'},
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-04 23:00:00'},
-  {user_id: 1, is_bedtime: false, created_at: '2023-02-05 06:00:00'},
-  {user_id: 1, is_bedtime: true, created_at: '2023-02-05 20:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-01 20:00:00'},
+  {user_id: user[1].id, is_bedtime: false, created_at: '2023-02-02 08:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-02 21:00:00'},
+  {user_id: user[1].id, is_bedtime: false, created_at: '2023-02-03 07:00:00'},
+  {user_id: user[1].id, is_bedtime: false, created_at: '2023-02-03 08:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-03 20:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-03 23:00:00'},
+  {user_id: user[1].id, is_bedtime: false, created_at: '2023-02-04 10:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-04 23:00:00'},
+  {user_id: user[1].id, is_bedtime: false, created_at: '2023-02-05 06:00:00'},
+  {user_id: user[1].id, is_bedtime: true, created_at: '2023-02-05 20:00:00'},
 ]
 
 bed_time_third = [
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-01 20:00:00'},
-  {user_id: 2, is_bedtime: false, created_at: '2023-02-02 08:10:00'},
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-02 21:00:00'},
-  {user_id: 2, is_bedtime: false, created_at: '2023-02-03 07:10:00'},
-  {user_id: 2, is_bedtime: false, created_at: '2023-02-03 08:20:00'},
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-03 20:00:00'},
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-03 23:00:00'},
-  {user_id: 2, is_bedtime: false, created_at: '2023-02-04 10:20:00'},
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-04 23:00:00'},
-  {user_id: 2, is_bedtime: false, created_at: '2023-02-05 06:30:00'},
-  {user_id: 2, is_bedtime: true, created_at: '2023-02-05 20:00:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-01 20:00:00'},
+  {user_id: user[2].id, is_bedtime: false, created_at: '2023-02-02 08:10:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-02 21:00:00'},
+  {user_id: user[2].id, is_bedtime: false, created_at: '2023-02-03 07:10:00'},
+  {user_id: user[2].id, is_bedtime: false, created_at: '2023-02-03 08:20:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-03 20:00:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-03 23:00:00'},
+  {user_id: user[2].id, is_bedtime: false, created_at: '2023-02-04 10:20:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-04 23:00:00'},
+  {user_id: user[2].id, is_bedtime: false, created_at: '2023-02-05 06:30:00'},
+  {user_id: user[2].id, is_bedtime: true, created_at: '2023-02-05 20:00:00'},
 ]
 bed_time_second.each { Clock.create!(_1) }
 bed_time_third.each { Clock.create!(_1) }
