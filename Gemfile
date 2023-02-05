@@ -57,6 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Pagination
 gem 'kaminari'
-
 # Ruby style guide, linter, and formatter
 gem "standard", group: [:development, :test]
+#JSON generation
+gem 'active_model_serializers', '~> 0.10.0'
+
