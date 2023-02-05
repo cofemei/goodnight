@@ -1,9 +1,5 @@
 # README
 
-- [ ] Clock In operation, and return all clocked-in times, ordered by created time.
-- [ ] Users can follow and unfollow other users.
-- [ ] See the sleep records over the past week for their friends, ordered by the length of their sleep.
-
 # API Document
 
 ## Clocks
