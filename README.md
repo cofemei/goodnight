@@ -1,5 +1,11 @@
 # README
 
+Setup development database
+
+```bash
+bin/setup
+```
+
 # API Document
 
 ## Clocks
