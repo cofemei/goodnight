@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :user_follows, only: [:index, :create, :destroy]
       resources :clocks, only: [:index, :create]
+      resources :weekly, only: [:index]
     end
   end
 end

@@ -7,7 +7,7 @@ class UserFollow < ApplicationRecord
   validates :follow_id, uniqueness: { scope: :user_id }
 
   class << self
-    def follow_clocks(user)
+    def followed_sort_by_sleeptime(user)
       follows_id = user.user_follows.pluck(:follow_id)
       clocks = Clock
         .where(user_id: follows_id)
